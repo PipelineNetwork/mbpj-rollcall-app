@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script src="css/bootstrap/bootstrap.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <title>MBPJ Identity Scanner</title>
+</head>
+<body>
+<div class="app" id="landing">
+    <div class="animate">
+        <img src="img/MBPJ.png" alt="MBPJ Logo" width="300" height="400">
+        <br>
+        <h1>Selamat Datang Ke Applikasi <br> Majlis Bandaraya Petaling Jaya</h1>
+        <br><br>
+        <button type="button" class="button-7" id="btnlanding">Mulakan Applikasi</button>
+    </div>
+    
+</div>
+<div class="app" id="main" style="display: none;">
+    <h1>IC Reader MBPJ</h1>
+    <select id="sltcheck">
+        <option value="1">Check In</option>
+        <option value="2">Check Out</option>
+    </select>
+    <select id="sltrollcall"></select>
+    <button type="button" class="event action" id="btnStartActivityChooseImage" style="display: inline-block;">Read Card</button>
+    <button type="button" class="event action" id="btnClear" style="display: inline-block;">Clear Data</button>
+    <!-- <div class="event action" id="btnStartActivityChooseImage">Read Card</div> -->
+    <div id="startActivityResultData"></div>
+    <button type="button" class="event display" id="submitappbtn">Submit Application</button>
+    <input type="text" style="display:none;height:500px;" id="hiddenApp">
+</div>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>

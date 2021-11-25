@@ -1,0 +1,28 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.darryncampbell.cordova.plugin.intent.api.exerciser"
+    },
+    "cordova-plugin-file": {
+      "PACKAGE_NAME": "com.darryncampbell.cordova.plugin.intent.api.exerciser"
+    },
+    "com-darryncampbell-cordova-plugin-intent": {
+      "PACKAGE_NAME": "com.darryncampbell.cordova.plugin.intent.api.exerciser"
+    },
+    "cordova-plugin-advanced-http": {
+      "ANDROIDBLACKLISTSECURESOCKETPROTOCOLS": "SSLv3,TLSv1",
+      "PACKAGE_NAME": "com.darryncampbell.cordova.plugin.intent.api.exerciser"
+    },
+    "cordova-plugin-cleartext": {
+      "PACKAGE_NAME": "com.darryncampbell.cordova.plugin.intent.api.exerciser"
+    }
+  },
+  "dependent_plugins": {}
+}
