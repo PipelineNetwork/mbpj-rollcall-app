@@ -1,0 +1,4 @@
+#Wed Dec 08 20:29:44 MYT 2021
+base.0=/Users/pnsb/Documents/GitHub/mbpj-rollcall-app/platforms/android/app/build/intermediates/transforms/dexMerger/debug/0
+path.0=classes.dex
+renamed.0=classes.dex

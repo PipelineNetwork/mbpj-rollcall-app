@@ -21,5 +21,11 @@
     </platform>
     <plugin name="cordova-plugin-whitelist" spec="1" />
     <plugin name="cordova-plugin-file" spec="^4.3.3" />
-	<plugin name="com-darryncampbell-cordova-plugin-intent" spec="^1.2.0" />
+    <plugin name="com-darryncampbell-cordova-plugin-intent" spec="^1.2.0" />
+    <plugin name="cordova-plugin-advanced-http" spec="^3.2.2">
+        <variable name="ANDROIDBLACKLISTSECURESOCKETPROTOCOLS" value="SSLv3,TLSv1" />
+    </plugin>
+    <plugin name="cordova-plugin-cleartext" spec="^1.0.0" />
+    <engine name="browser" spec="^5.0.4" />
+    <engine name="android" spec="^7.1.4" />
 </widget>

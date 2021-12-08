@@ -15,13 +15,18 @@
       "cordova-plugin-cleartext": {}
     },
     "platforms": [
+      "browser",
       "android"
     ]
   },
   "dependencies": {
-    "cordova-android": "^8.1.0",
+    "com-darryncampbell-cordova-plugin-intent": "^1.2.0",
+    "cordova-android": "^7.1.4",
+    "cordova-browser": "^5.0.4",
     "cordova-plugin-advanced-http": "^3.2.2",
     "cordova-plugin-cleartext": "^1.0.0",
-    "cordova-plugin-compat": "^1.2.0"
+    "cordova-plugin-compat": "^1.2.0",
+    "cordova-plugin-file": "^4.3.3",
+    "cordova-plugin-whitelist": "1"
   }
 }

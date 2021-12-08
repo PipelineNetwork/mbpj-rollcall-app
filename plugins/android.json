@@ -7,12 +7,6 @@
     "files": {}
   },
   "installed_plugins": {
-    "cordova-plugin-whitelist": {
-      "PACKAGE_NAME": "com.darryncampbell.cordova.plugin.intent.api.exerciser"
-    },
-    "cordova-plugin-file": {
-      "PACKAGE_NAME": "com.darryncampbell.cordova.plugin.intent.api.exerciser"
-    },
     "com-darryncampbell-cordova-plugin-intent": {
       "PACKAGE_NAME": "com.darryncampbell.cordova.plugin.intent.api.exerciser"
     },
@@ -21,6 +15,12 @@
       "PACKAGE_NAME": "com.darryncampbell.cordova.plugin.intent.api.exerciser"
     },
     "cordova-plugin-cleartext": {
+      "PACKAGE_NAME": "com.darryncampbell.cordova.plugin.intent.api.exerciser"
+    },
+    "cordova-plugin-file": {
+      "PACKAGE_NAME": "com.darryncampbell.cordova.plugin.intent.api.exerciser"
+    },
+    "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "com.darryncampbell.cordova.plugin.intent.api.exerciser"
     }
   },

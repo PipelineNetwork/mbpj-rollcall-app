@@ -1,0 +1,10 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "name": "MBPJ IC Scanner",
+  "short_name": "MBPJ IC Scanner",
+  "version": "com.darryncampbell.cordova.plugin.intent.api.exerciser",
+  "description": "A small application to demonstrate the API exposed by the cordova plugin: com.darryncampbell.cordova.plugin.intent.  Wraps the Android intent functionality of sendBroadcast and startActivity and various ways of receiving information back.",
+  "icons": [],
+  "start_url": "index.html"
+}

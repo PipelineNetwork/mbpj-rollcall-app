@@ -11,6 +11,25 @@ var app = {
 
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
+        var windowWidth = window.innerWidth;
+        var windowHeight = window.innerHeight;
+        var pixelRatio = window.devicePixelRatio || 1; /// get pixel ratio of device
+
+        canvasMain = document.getElementById("landing");
+        canvasMain2 = document.getElementById("main");
+
+        canvasMain.width = windowWidth * pixelRatio;   /// resolution of canvas
+        canvasMain.height = windowHeight * pixelRatio;
+        canvasMain.style.width = windowWidth + 'px';   /// CSS size of canvas
+        canvasMain.style.height = windowHeight + 'px';
+
+        canvasMain2.width = windowWidth * pixelRatio;   /// resolution of canvas
+        canvasMain2.height = windowHeight * pixelRatio;
+        canvasMain2.style.width = windowWidth + 'px';   /// CSS size of canvas
+        canvasMain2.style.height = windowHeight + 'px';
+
+        // var physicalScreenWidth = window.screen.width * window.devicePixelRatio;
+        // var physicalScreenHeight = window.screen.height * window.devicePixelRatio;
         document.getElementById("btnStartActivityChooseImage").addEventListener("click", startActivityChooseImage);
         document.getElementById("submitappbtn").addEventListener("click", submitapplication);
         document.getElementById("btnlanding").addEventListener("click", landing);
