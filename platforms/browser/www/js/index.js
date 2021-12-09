@@ -34,6 +34,7 @@ var app = {
         document.getElementById("submitappbtn").addEventListener("click", submitapplication);
         document.getElementById("btnlanding").addEventListener("click", landing);
         document.getElementById("btnClear").addEventListener("click", clearfield);
+        document.getElementById("btnGetSelect").addEventListener("click", GetRollCall);
         
         registerBroadcastReceiver();
 
@@ -73,33 +74,34 @@ function clearfield(){
 function landing(){
     document.getElementById('landing').style.display = "none";
     document.getElementById('main').style.display = "block";
+    GetRollCall();
+}
+
+function GetRollCall()
+{
+    var selectElement = document.getElementById("sltrollcall");
+    var i, L = selectElement.options.length - 1;
+    for(i = L; i >= 0; i--) {
+        selectElement.remove(i);
+    }
     const options = {
         method: 'get',
         headers: {}
-      };
-      
+    };
     cordova.plugin.http.sendRequest('http://rollcall.mbpj.gov.my/api/checkin/', options, function(response) {
 
-        //alert(response.status);
-
-        //alert(response.data);
+        // alert(response.data);
         var rollcallval = JSON.parse(response.data);
-        //alert(rollcallval[0].tajuk_rollcall);
-        //var index = 0;
         for(var element in rollcallval)
         {
             var opt = document.createElement("option");
             opt.value= rollcallval[element].id;
             opt.innerHTML = rollcallval[element].tajuk_rollcall + "(" + rollcallval[element].mula_rollcall + ")"; // whatever property it has
 
-            // then append it to the select element
             document.getElementById('sltrollcall').appendChild(opt);
-            //index++;
         }
         
     }, function(response) {
-
-        //alert(response.status);
         alert("Terdapat Ganguan Teknikal Sila Cuba Sebentar Lagi");
         alert(response.error);
     });
